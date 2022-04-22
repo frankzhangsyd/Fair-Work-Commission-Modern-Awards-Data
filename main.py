@@ -1,9 +1,7 @@
-# %%
 from pyfwc import FWCAPI
 from pathlib import Path
 import time
 
-# %%
 def save_modern_awards_data():
     # change your subscription key here
     YOUR_SUBSCRIPTION_KEY = ""
@@ -17,6 +15,7 @@ def save_modern_awards_data():
 
     # save data from api
     for award_code, award_name in award_dict.items():
+        print(f"----- Retreiving data for {award_code}-{award_name} -----")
         #create folder for each award
         Path(
             f"./data/{award_code}-{award_name}").mkdir(parents=True, exist_ok=True)
@@ -46,9 +45,6 @@ def save_modern_awards_data():
             f'./data/{award_code}-{award_name}/wage-allowances.xlsx', index=False)
         time.sleep(10)            
 
-
-# %%
 if __name__ == "__main__":
     save_modern_awards_data()
-
-
+    print("----- Finished! -----")

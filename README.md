@@ -5,7 +5,7 @@ Usage
 -----
 
 You can :
-1. download data from the data folder (latest data as `2022-04-22`)
+1. download data from the [data folder](https://github.com/frankzhangsyd/Fair-Work-Commission-Modern-Awards-Data/tree/main/data) (latest data as `2022-04-22`)
 OR
 2. execute script by yourself (recommended)
 
